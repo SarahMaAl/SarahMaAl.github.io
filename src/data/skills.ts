@@ -1,1 +1,87 @@
-
+export const skills = [
+  {
+    category: "Physique pour la santé",
+    description:
+      "Bases physiques appliquées aux problématiques biomédicales, au diagnostic, à l’imagerie, à la radioprotection et aux technologies médicales.",
+    items: [
+      "Physique médicale",
+      "Radioprotection",
+      "Dosimétrie",
+      "Imagerie médicale",
+      "Instrumentation biomédicale",
+      "Analyse de phénomènes physiques"
+    ]
+  },
+  {
+    category: "Modélisation et simulation numérique",
+    description:
+      "Modélisation de systèmes physiques ou biologiques, simulation de phénomènes complexes et interprétation de résultats numériques.",
+    items: [
+      "Simulation numérique",
+      "Modélisation biomédicale",
+      "Méthodes déterministes",
+      "Simulation Monte Carlo",
+      "Transport de particules",
+      "Validation de modèles",
+      "Étude paramétrique"
+    ]
+  },
+  {
+    category: "Imagerie, données et IA biomédicale",
+    description:
+      "Analyse de données scientifiques ou médicales, traitement d’images et intérêt pour les méthodes d’intelligence artificielle appliquées au biomédical.",
+    items: [
+      "Traitement d’image",
+      "Données médicales",
+      "DICOM",
+      "Analyse statistique",
+      "Visualisation scientifique",
+      "Modèles prédictifs",
+      "IA générative",
+      "Apprentissage automatique"
+    ]
+  },
+  {
+    category: "Biomécanique et systèmes biologiques",
+    description:
+      "Intérêt pour la mécanique des tissus, la mécano-biologie, les propriétés physiques des milieux biologiques et la modélisation des organes.",
+    items: [
+      "Biomécanique",
+      "Mécanique des tissus",
+      "Mécano-biologie",
+      "Jumeaux numériques",
+      "Modélisation d’organes",
+      "Milieux biologiques",
+      "Phénomènes de transport"
+    ]
+  },
+  {
+    category: "Diagnostic et technologies biomédicales",
+    description:
+      "Intérêt pour les dispositifs de diagnostic, les capteurs, les biomarqueurs, les technologies optiques et les approches expérimentales ou numériques pour la santé.",
+    items: [
+      "Biocapteurs",
+      "Diagnostic médical",
+      "Biomarqueurs",
+      "Nanotechnologies",
+      "Optique biomédicale",
+      "Microscopie",
+      "Dispositifs médicaux"
+    ]
+  },
+  {
+    category: "Programmation scientifique",
+    description:
+      "Développement de scripts, notebooks et outils d’analyse pour traiter, visualiser et interpréter des données scientifiques.",
+    items: [
+      "Python",
+      "MATLAB",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Jupyter Notebook",
+      "Git",
+      "Markdown"
+    ]
+  }
+];
