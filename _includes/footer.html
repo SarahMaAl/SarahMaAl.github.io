@@ -1,1 +1,13 @@
+{% assign profile = site.data.profile %}
 
+<footer class="footer">
+  <p>
+    © {{ "now" | date: "%Y" }} {{ profile.full_name }}. Portfolio personnel.
+  </p>
+
+  <p class="footer-links">
+    <a href="mailto:{{ profile.email }}">Email</a>
+    <a href="{{ profile.github }}" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="{{ profile.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
+  </p>
+</footer>
