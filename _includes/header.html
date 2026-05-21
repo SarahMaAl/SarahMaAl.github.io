@@ -1,1 +1,31 @@
+{% assign profile = site.data.profile %}
 
+<header class="header">
+  <a href="{{ '/' | relative_url }}" class="brand" aria-label="Retour à l’accueil">
+    <span class="brand-mark">{{ profile.initials }}</span>
+
+    <span>
+      <strong>{{ profile.full_name }}</strong>
+      <small>{{ profile.title }}</small>
+    </span>
+  </a>
+
+  <nav class="nav" aria-label="Navigation principale">
+    {% for item in site.data.navigation %}
+      {% assign is_active = false %}
+
+      {% if item.url == "/" and page.url == "/" %}
+        {% assign is_active = true %}
+      {% elsif item.url != "/" and page.url contains item.url %}
+        {% assign is_active = true %}
+      {% endif %}
+
+      <a
+        href="{{ item.url | relative_url }}"
+        class="{% if is_active %}active{% endif %}"
+      >
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </nav>
+</header>
