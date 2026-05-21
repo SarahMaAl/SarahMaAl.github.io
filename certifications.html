@@ -1,1 +1,29 @@
+---
+layout: default
+title: Certifications
+permalink: /certifications/
+description: Certifications et formations de Sarah Maal.
+---
 
+{% assign certifications = site.certifications | sort: "date" | reverse %}
+
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Parcours</p>
+
+    <h1>Certifications</h1>
+
+    <p>
+      Formations, certifications et attestations liées à mon parcours scientifique,
+      numérique et biomédical.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid cards-grid">
+    {% for certification in certifications %}
+      {% include certification-card.html certification=certification %}
+    {% endfor %}
+  </div>
+</section>
