@@ -1,1 +1,31 @@
+full_name: "Sarah Martin-Alonso"
+initials: "SMA"
 
+title: "Physique pour la santé & modélisation biomédicale"
+
+subtitle: "Candidate PhD intéressée par la physique appliquée à la santé, la modélisation numérique, l’imagerie médicale, la biomécanique, l’analyse de données et les technologies biomédicales."
+
+location: "France"
+email: "sarah.martin.alonso@gmail.com.com"
+github: "https://github.com/SarahMaAl"
+linkedin: "https://www.linkedin.com/in/sarah0martin0alonso/"
+cv: "/assets/cv/cv.pdf"
+avatar: "/assets/images/profile.svg"
+
+availability: "À la recherche d’un PhD dans les domaines de la physique pour la santé, de la modélisation biomédicale, de l’imagerie, de la simulation numérique ou des technologies médicales."
+
+highlights:
+  - "Physique pour la santé"
+  - "Modélisation biomédicale"
+  - "Simulation numérique"
+  - "Imagerie médicale"
+  - "Analyse de données"
+  - "Biomécanique"
+  - "IA appliquée au biomédical"
+  - "Diagnostic et capteurs"
+
+about:
+  - "Je m’intéresse aux applications de la physique, des mathématiques, de la simulation numérique et de l’analyse de données dans le domaine de la santé et du biomédical."
+  - "Mon objectif est de poursuivre en doctorat sur des problématiques interdisciplinaires liées à la modélisation de systèmes biologiques, l’imagerie médicale, la biomécanique, la simulation de phénomènes physiques, l’aide au diagnostic ou le développement d’outils numériques pour la santé."
+  - "Mon profil combine une base en physique médicale avec un intérêt plus large pour la physique appliquée, la modélisation, les données, les outils computationnels et les technologies biomédicales."
+  - "Ce portfolio présente mes projets, compétences, outils et certifications afin de montrer ma progression vers un profil de recherche à l’interface entre physique, santé, numérique et ingénierie biomédicale."
