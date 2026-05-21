@@ -4,6 +4,11 @@
       logo: "/assets/images/logos/Python.png"
       level: "Intermédiaire / avancé"
       usage: "Analyse de données, scripts scientifiques, visualisation et automatisation."
+      
+    - name: "R"
+          logo: "/assets/images/logos/R.png"
+          level: "Notions / pratique"
+          usage: "Statistique, analyse de données, visualisation et traitement de données scientifiques."
 
     - name: "MATLAB"
       logo: "/assets/images/logos/matlab.png"
