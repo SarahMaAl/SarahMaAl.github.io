@@ -1,1 +1,59 @@
+{% assign project = include.project %}
 
+{% capture data_tags %}
+  {{ project.title }}
+  {{ project.subtitle }}
+  {{ project.affiliation }}
+  {{ project.context }}
+  {{ project.status }}
+  {{ project.domain | join: ' ' }}
+  {{ project.methods | join: ' ' }}
+  {{ project.tools | join: ' ' }}
+  {{ project.skills | join: ' ' }}
+{% endcapture %}
+
+<article class="card project-card" data-project-card data-tags="{{ data_tags | downcase | strip | escape }}">
+  {% if project.image %}
+    <a href="{{ project.url | relative_url }}" class="project-image">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+    </a>
+  {% endif %}
+
+  <div class="card-body">
+    <div class="card-meta">
+      {% if project.affiliation %}
+        <span>{{ project.affiliation }}</span>
+      {% endif %}
+
+      {% if project.date %}
+        <span>{{ project.date | date: "%Y" }}</span>
+      {% endif %}
+    </div>
+
+    <h3>
+      <a href="{{ project.url | relative_url }}">
+        {{ project.title }}
+      </a>
+    </h3>
+
+    {% if project.subtitle %}
+      <p>{{ project.subtitle }}</p>
+    {% endif %}
+
+    {% if project.domain %}
+      <div class="badge-list">
+        {% for item in project.domain limit:4 %}
+          <span class="badge">{{ item }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if project.tools %}
+      <div class="tool-list">
+        {% for tool in project.tools limit:5 %}
+          <span>{{ tool }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>
