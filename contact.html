@@ -1,1 +1,45 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+description: Contacter Sarah Maal.
+---
 
+{% assign profile = site.data.profile %}
+
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Contact</p>
+
+    <h1>Me contacter</h1>
+
+    <p>
+      Pour un PhD, un stage, une collaboration, un projet de recherche ou une opportunité
+      liée à la physique pour la santé, à la modélisation biomédicale, à l’imagerie ou aux données.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:{{ profile.email }}">
+      <span>Email</span>
+      <strong>{{ profile.email }}</strong>
+    </a>
+
+    <a class="contact-card" href="{{ profile.github }}" target="_blank" rel="noreferrer">
+      <span>GitHub</span>
+      <strong>Voir mes dépôts</strong>
+    </a>
+
+    <a class="contact-card" href="{{ profile.linkedin }}" target="_blank" rel="noreferrer">
+      <span>LinkedIn</span>
+      <strong>Voir mon profil</strong>
+    </a>
+
+    <a class="contact-card" href="{{ profile.cv | relative_url }}" target="_blank">
+      <span>CV</span>
+      <strong>Télécharger mon CV</strong>
+    </a>
+  </div>
+</section>
