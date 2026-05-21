@@ -14,7 +14,7 @@ skills:
 skill_logos:
   - src: "/assets/images/logos/imagej.png"
     alt: "ImageJ"
-image: "/assets/images/certifications/coursera-imagej.jpg"
+image: "/assets/images/logos/imagej.png"
 link: "https://www.coursera.org/account/accomplishments/certificate/SHELZF4QGT55"
 link_label: "Voir le diplôme"
 featured: true
