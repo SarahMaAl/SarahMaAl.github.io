@@ -1,1 +1,50 @@
+---
+layout: default
+title: Projets
+permalink: /projects/
+description: Projets de Sarah Maal.
+---
 
+{% assign projects = site.projects | sort: "order" %}
+
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Projets</p>
+
+    <h1>Portfolio de projets</h1>
+
+    <p>
+      Sélection de projets liés à la physique pour la santé, à la modélisation biomédicale,
+      à l’imagerie médicale, à la simulation numérique et à l’analyse de données.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="filter-panel">
+    <input
+      type="search"
+      placeholder="Rechercher par projet, outil, domaine ou mot-clé..."
+      data-project-search
+    >
+
+    <div class="filter-buttons">
+      <button class="filter-button active" data-filter="all">Tous</button>
+      <button class="filter-button" data-filter="physique pour la santé">Physique pour la santé</button>
+      <button class="filter-button" data-filter="physique médicale">Physique médicale</button>
+      <button class="filter-button" data-filter="imagerie médicale">Imagerie médicale</button>
+      <button class="filter-button" data-filter="dosimétrie">Dosimétrie</button>
+      <button class="filter-button" data-filter="simulation numérique">Simulation numérique</button>
+      <button class="filter-button" data-filter="monte carlo">Monte Carlo</button>
+      <button class="filter-button" data-filter="biomécanique">Biomécanique</button>
+      <button class="filter-button" data-filter="analyse de données">Analyse de données</button>
+      <button class="filter-button" data-filter="ia">IA biomédicale</button>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    {% for project in projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
