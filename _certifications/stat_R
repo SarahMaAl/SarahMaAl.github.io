@@ -14,7 +14,7 @@ skills:
   - "Analyse de données"
   - "Méthodes quantitatives"
 skill_logos:
-  - src: "/assets/images/logos/r.png"
+  - src: "/assets/images/logos/R.png"
     alt: "R"
 image: "/assets/images/certifications/fun-statistique-r.jpg"
 link: "https://openbadgepassport.com/app/badge/info/561248"
