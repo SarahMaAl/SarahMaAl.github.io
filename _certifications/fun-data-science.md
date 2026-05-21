@@ -21,7 +21,7 @@ skill_logos:
   - src: "/assets/images/logos/numpy.svg"
     alt: "NumPy"
 image: "/assets/images/certifications/fun-data-science.jpg"
-link: "[COLLE_ICI_LE_LIEN_OPENBADGE](https://openbadgepassport.com/app/badge/info/589657)"
+link: "https://openbadgepassport.com/app/badge/info/589657"
 link_label: "Voir l’OpenBadge"
 featured: true
 ---
