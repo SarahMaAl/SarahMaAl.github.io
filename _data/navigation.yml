@@ -1,0 +1,11 @@
+- label: "Accueil"
+  url: "/"
+
+- label: "Projets"
+  url: "/projects/"
+
+- label: "Certifications"
+  url: "/certifications/"
+
+- label: "Contact"
+  url: "/contact/"
