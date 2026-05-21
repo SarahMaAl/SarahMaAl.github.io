@@ -1,7 +1,7 @@
 ---
 title: "S’initier à la Data Science et à ses enjeux"
 organization: "CY Cergy Paris Université"
-organization_logo: "/assets/images/organizations/cy-cergy.png"
+organization_logo: "/assets/images/organizations/certif_ds_cergy.jpg"
 platform: "France Université Numérique"
 platform_logo: "/assets/images/organizations/fun.png"
 date: 2023-07-01
