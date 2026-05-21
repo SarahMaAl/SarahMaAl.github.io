@@ -1,0 +1,21 @@
+---
+title: "Débuter avec ImageJ"
+organization: "Coursera"
+organization_logo: "/assets/images/organizations/coursera.png"
+date: 2023-03-01
+summary: "Formation d’initiation à ImageJ pour l’analyse, le traitement et la manipulation d’images scientifiques."
+category: "Imagerie médicale"
+credential_id: "SHELZF4QGT55"
+skills:
+  - "ImageJ"
+  - "Traitement d’image"
+  - "Analyse d’images"
+  - "Imagerie scientifique"
+skill_logos:
+  - src: "/assets/images/logos/imagej.png"
+    alt: "ImageJ"
+image: "/assets/images/certifications/coursera-imagej.jpg"
+link: "https://www.coursera.org/account/accomplishments/certificate/SHELZF4QGT55"
+link_label: "Voir le diplôme"
+featured: true
+---
