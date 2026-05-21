@@ -1,68 +1,99 @@
 - category: "Programmation scientifique"
   items:
     - name: "Python"
+      logo: "/assets/images/logos/python.svg"
       level: "Intermédiaire / avancé"
       usage: "Analyse de données, scripts scientifiques, visualisation et automatisation."
+
     - name: "MATLAB"
+      logo: "/assets/images/logos/matlab.svg"
       level: "Intermédiaire"
       usage: "Calcul scientifique, traitement du signal et visualisation."
+
     - name: "Jupyter Notebook"
+      logo: "/assets/images/logos/jupyter.svg"
       level: "Intermédiaire"
       usage: "Exploration, documentation et analyse interactive."
 
 - category: "Analyse de données"
   items:
     - name: "NumPy"
+      logo: "/assets/images/logos/numpy.svg"
       level: "Intermédiaire"
       usage: "Calcul numérique et manipulation de tableaux."
+
     - name: "Pandas"
+      logo: "/assets/images/logos/pandas.svg"
       level: "Intermédiaire"
       usage: "Nettoyage, organisation et analyse de données."
+
     - name: "Matplotlib"
+      logo: "/assets/images/logos/matplotlib.svg"
       level: "Intermédiaire"
       usage: "Graphiques scientifiques et visualisation de résultats."
+
     - name: "SciPy"
+      logo: "/assets/images/logos/scipy.svg"
       level: "Notions / pratique"
       usage: "Méthodes numériques, statistiques et analyse scientifique."
 
 - category: "Imagerie médicale"
   items:
     - name: "DICOM"
+      logo: "/assets/images/logos/dicom.svg"
       level: "Notions / pratique"
       usage: "Format standard des images médicales."
+
     - name: "ImageJ"
+      logo: "/assets/images/logos/imagej.svg"
       level: "Notions / pratique"
       usage: "Analyse et traitement d’images."
+
     - name: "3D Slicer"
+      logo: "/assets/images/logos/3d-slicer.svg"
       level: "Notions / pratique"
       usage: "Visualisation et traitement d’images médicales."
+
     - name: "pydicom"
+      logo: "/assets/images/logos/pydicom.svg"
       level: "Notions / pratique"
       usage: "Lecture et manipulation de données DICOM avec Python."
 
 - category: "Simulation physique"
   items:
     - name: "Monte Carlo"
+      logo: "/assets/images/logos/monte-carlo.svg"
       level: "En développement"
       usage: "Simulation de phénomènes physiques et transport de particules."
+
     - name: "GATE / Geant4"
+      logo: "/assets/images/logos/geant4.svg"
       level: "En apprentissage"
       usage: "Simulation Monte Carlo appliquée à la physique médicale."
+
     - name: "TOPAS"
+      logo: "/assets/images/logos/topas.svg"
       level: "À explorer"
       usage: "Simulation Monte Carlo pour applications médicales."
 
 - category: "Documentation et versioning"
   items:
     - name: "Git"
+      logo: "/assets/images/logos/git.svg"
       level: "Intermédiaire"
       usage: "Versioning et suivi de projet."
+
     - name: "GitHub"
+      logo: "/assets/images/logos/github.svg"
       level: "Intermédiaire"
       usage: "Dépôt de code, documentation et portfolio."
+
     - name: "Markdown"
+      logo: "/assets/images/logos/markdown.svg"
       level: "Intermédiaire"
       usage: "Documentation technique et rédaction de projets."
+
     - name: "LaTeX"
+      logo: "/assets/images/logos/latex.svg"
       level: "Notions / pratique"
       usage: "Rédaction scientifique et rapports."
