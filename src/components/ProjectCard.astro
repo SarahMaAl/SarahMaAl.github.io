@@ -1,1 +1,33 @@
+---
+const { project } = Astro.props;
+---
 
+<article class="project-card">
+  {project.data.image && (
+    <img src={project.data.image} alt={project.data.title} />
+  )}
+
+  <div class="project-card-content">
+    <p class="project-affiliation">{project.data.affiliation}</p>
+
+    <h2>
+      <a href={`/projets/${project.id}/`}>
+        {project.data.title}
+      </a>
+    </h2>
+
+    <p>{project.data.summary}</p>
+
+    <div class="badges">
+      {project.data.domain.map((item) => (
+        <span>{item}</span>
+      ))}
+    </div>
+
+    <div class="tools">
+      {project.data.tools.map((tool) => (
+        <small>{tool}</small>
+      ))}
+    </div>
+  </div>
+</article>
