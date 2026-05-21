@@ -1,0 +1,23 @@
+---
+title: "Introduction à la statistique avec R"
+organization: "Université Paris-Saclay"
+organization_logo: "/assets/images/organizations/paris-saclay.png"
+platform: "France Université Numérique"
+platform_logo: "/assets/images/organizations/fun.png"
+date: 2023-05-01
+summary: "Badge de réussite d’une formation d’introduction aux méthodes statistiques avec le langage R."
+category: "Statistique"
+credential_id: "OPENBADGEPASSPORT-561248"
+skills:
+  - "Statistique"
+  - "Programmation avec R"
+  - "Analyse de données"
+  - "Méthodes quantitatives"
+skill_logos:
+  - src: "/assets/images/logos/r.png"
+    alt: "R"
+image: "/assets/images/certifications/fun-statistique-r.jpg"
+link: "https://openbadgepassport.com/app/badge/info/561248"
+link_label: "Voir l’OpenBadge"
+featured: true
+---
