@@ -1,0 +1,21 @@
+---
+title: "MATLAB Onramp"
+organization: "MathWorks"
+organization_logo: "/assets/images/organizations/mathworks.png"
+date: 2023-04-01
+summary: "Formation d’initiation à MATLAB couvrant les bases de l’environnement, du calcul numérique, de la manipulation de variables et de la visualisation."
+category: "Programmation scientifique"
+credential_id: ""
+skills:
+  - "MATLAB"
+  - "Calcul scientifique"
+  - "Visualisation"
+  - "Programmation"
+skill_logos:
+  - src: "/assets/images/logos/matlab.png"
+    alt: "MATLAB"
+image: "/assets/images/certifications/mathworks-matlab-onramp.jpg"
+link: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=fa54ddfa-1450-4e32-ad83-415d578fce17&"
+link_label: "Voir le diplôme"
+featured: true
+---
