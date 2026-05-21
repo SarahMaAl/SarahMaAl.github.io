@@ -1,1 +1,98 @@
+---
+layout: default
+---
 
+<article class="project-detail">
+  <a class="back-link" href="{{ '/projects/' | relative_url }}">← Retour aux projets</a>
+
+  <header class="detail-header">
+    <p class="eyebrow">{{ page.affiliation }}</p>
+    <h1>{{ page.title }}</h1>
+
+    {% if page.subtitle %}
+      <p class="detail-summary">{{ page.subtitle }}</p>
+    {% endif %}
+
+    <div class="detail-meta">
+      {% if page.date %}
+        <span>{{ page.date | date: "%B %Y" }}</span>
+      {% endif %}
+
+      {% if page.status %}
+        <span>{{ page.status }}</span>
+      {% endif %}
+
+      {% if page.context %}
+        <span>{{ page.context }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.image %}
+    <img class="detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+
+  <section class="detail-grid">
+    {% if page.domain %}
+      <div class="detail-panel">
+        <h2>Domaines</h2>
+        <div class="badge-list">
+          {% for item in page.domain %}
+            <span class="badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.methods %}
+      <div class="detail-panel">
+        <h2>Méthodes</h2>
+        <div class="badge-list">
+          {% for item in page.methods %}
+            <span class="badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.tools %}
+      <div class="detail-panel">
+        <h2>Outils</h2>
+        <div class="badge-list">
+          {% for item in page.tools %}
+            <span class="badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.skills %}
+      <div class="detail-panel">
+        <h2>Compétences</h2>
+        <div class="badge-list">
+          {% for item in page.skills %}
+            <span class="badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="content-block">
+    {{ content }}
+  </section>
+
+  <div class="project-links">
+    {% if page.github %}
+      <a class="button secondary" href="{{ page.github }}" target="_blank" rel="noreferrer">
+        Voir le dépôt GitHub
+      </a>
+    {% endif %}
+
+    {% if page.report %}
+      <a class="button primary" href="{{ page.report | relative_url }}" target="_blank">
+        Voir le rapport
+      </a>
+    {% endif %}
+  </div>
+</article>
