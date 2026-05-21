@@ -1,1 +1,32 @@
+title: "Sarah Martin-Alonso"
+description: "Portfolio de Sarah Martin-Alonso — physique pour la santé, modélisation biomédicale, imagerie médicale, simulation et analyse de données."
+url: "https://sarahmaal.github.io"
+baseurl: ""
 
+lang: fr
+timezone: Europe/Paris
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  certifications:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
