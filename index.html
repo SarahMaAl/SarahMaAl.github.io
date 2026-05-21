@@ -121,7 +121,11 @@ description: Portfolio de Sarah Maal.
           {% for tool in group.items %}
             <article class="tool-card">
               <div class="tool-icon">
-                {{ tool.name | slice: 0, 2 | upcase }}
+                {% if tool.logo %}
+                  <img src="{{ tool.logo | relative_url }}" alt="{{ tool.name }} logo">
+                {% else %}
+                  <span>{{ tool.name | slice: 0, 2 | upcase }}</span>
+                {% endif %}
               </div>
 
               <div>
