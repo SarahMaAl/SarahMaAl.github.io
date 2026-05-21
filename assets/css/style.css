@@ -433,12 +433,23 @@ p {
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
   color: #06101d;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.tool-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.tool-icon span {
+  font-weight: 900;
 }
 
 .tool-card h4 {
