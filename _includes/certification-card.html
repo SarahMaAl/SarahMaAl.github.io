@@ -1,23 +1,45 @@
 {% assign certification = include.certification %}
 
 <article class="card certification-card">
+  {% if certification.image %}
+    <div class="certification-image">
+      <img src="{{ certification.image | relative_url }}" alt="{{ certification.title }}">
+    </div>
+  {% endif %}
+
   <div class="card-body">
-    <div class="card-meta">
-      {% if certification.category %}
-        <span>{{ certification.category }}</span>
-      {% else %}
-        <span>Certification</span>
+    <div class="certification-top">
+      {% if certification.organization_logo %}
+        <div class="issuer-logo">
+          <img src="{{ certification.organization_logo | relative_url }}" alt="{{ certification.organization }}">
+        </div>
       {% endif %}
 
-      {% if certification.date %}
-        <span>{{ certification.date | date: "%Y" }}</span>
-      {% endif %}
+      <div>
+        <div class="card-meta">
+          {% if certification.category %}
+            <span>{{ certification.category }}</span>
+          {% else %}
+            <span>Certification</span>
+          {% endif %}
+
+          {% if certification.date %}
+            <span>{{ certification.date | date: "%B %Y" }}</span>
+          {% endif %}
+        </div>
+
+        <h3>{{ certification.title }}</h3>
+
+        {% if certification.organization %}
+          <p class="organization">{{ certification.organization }}</p>
+        {% endif %}
+      </div>
     </div>
 
-    <h3>{{ certification.title }}</h3>
-
-    {% if certification.organization %}
-      <p class="organization">{{ certification.organization }}</p>
+    {% if certification.credential_id %}
+      <p class="credential-id">
+        Identifiant : {{ certification.credential_id }}
+      </p>
     {% endif %}
 
     {% if certification.summary %}
@@ -32,9 +54,19 @@
       </div>
     {% endif %}
 
+    {% if certification.skill_logos %}
+      <div class="certification-logo-list">
+        {% for logo in certification.skill_logos %}
+          <div class="mini-logo">
+            <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}">
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     {% if certification.link %}
       <a class="inline-link" href="{{ certification.link }}" target="_blank" rel="noreferrer">
-        Voir la certification
+        Voir le diplôme
       </a>
     {% endif %}
   </div>
