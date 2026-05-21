@@ -1,1 +1,41 @@
+{% assign certification = include.certification %}
 
+<article class="card certification-card">
+  <div class="card-body">
+    <div class="card-meta">
+      {% if certification.category %}
+        <span>{{ certification.category }}</span>
+      {% else %}
+        <span>Certification</span>
+      {% endif %}
+
+      {% if certification.date %}
+        <span>{{ certification.date | date: "%Y" }}</span>
+      {% endif %}
+    </div>
+
+    <h3>{{ certification.title }}</h3>
+
+    {% if certification.organization %}
+      <p class="organization">{{ certification.organization }}</p>
+    {% endif %}
+
+    {% if certification.summary %}
+      <p>{{ certification.summary }}</p>
+    {% endif %}
+
+    {% if certification.skills %}
+      <div class="badge-list">
+        {% for skill in certification.skills %}
+          <span class="badge">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if certification.link %}
+      <a class="inline-link" href="{{ certification.link }}" target="_blank" rel="noreferrer">
+        Voir la certification
+      </a>
+    {% endif %}
+  </div>
+</article>
