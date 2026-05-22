@@ -75,6 +75,11 @@
       level: "En apprentissage"
       usage: "Simulation du transport de particules et modélisation d’interactions rayonnement-matière."
 
+    - name: "PENELOPE"
+      logo: "/assets/images/logos/penelope.png"
+      level: "À explorer"
+      usage: "Simulation Monte Carlo du transport couplé électrons, positrons et photons, avec un intérêt particulier pour les interactions rayonnement-matière, la dosimétrie et les applications médicales."
+
     - name: "FLUKA"
       logo: "/assets/images/logos/FLUKA.png"
       level: "Notions / pratique"
